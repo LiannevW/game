@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import WrongGuesses from './components/WrongGuesses'
+import VisualProgress from './components/VisualProgress'
 
 class App extends Component {
   render() {
@@ -8,11 +9,9 @@ class App extends Component {
       <div className="App">
         <h1>Hangman</h1>
 
-        <div className="wrongLetters"></div>
-        <p>Q R X</p>
+        <WrongGuesses />
 
-        <div className="visualProgress"></div>
-        <p>6</p>
+        <VisualProgress />
 
         <div className="wordProgress"></div>
         <p>_ _ _ E </p>
