@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>Hangman</h1>
+
+        <div className="wrongLetters"></div>
+        <p>Q R X</p>
+
+        <div className="visualProgress"></div>
+        <p>6</p>
+
+        <div className="wordProgress"></div>
+        <p>_ _ _ E </p>
+
+        <div className="letterInput"></div>
+
+        <label> It is your trun to guess:</label>
+            <input type="text" placeholder="Guess a letter!"  />
+
       </div>
     );
   }
