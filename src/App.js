@@ -3,6 +3,7 @@ import './App.css';
 import WrongGuesses from './components/WrongGuesses'
 import VisualProgress from './components/VisualProgress'
 import WordProgress from './components/WordProgress'
+import GuessInput from './components/GuessInput'
 
 class App extends Component {
   render() {
@@ -16,13 +17,9 @@ class App extends Component {
 
         <WordProgress />
 
+        <GuessInput />
 
-        <div className="letterInput"></div>
-
-        <label> It is your trun to guess:</label>
-            <input type="text" placeholder="Guess a letter!"  />
-
-      </div>
+    </div>
     );
   }
 }

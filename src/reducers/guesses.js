@@ -1,9 +1,14 @@
-const guesses = [
-  "e",
-  "a",
-  "b",
-]
+export default (state = [], action) => {
+  if (action.type === 'GUESS' ) {
+    const { input, word } = action.payload
 
-export default (state = guesses, action) => {
-  return state
+    if ( input === word) {
+    return state.concat(input.split(''))
+    }
+
+  return state.concat(input)
+  }
+
+return state
+
 }
