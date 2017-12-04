@@ -3,18 +3,20 @@ import { connect } from 'react-redux'
 
 class VisualProgress extends PureComponent {
   render () {
-    const progress = this.props.visualProgress
+
+  const count = 6 - this.props.visualProgress
 
     return (
-      <p>{ progress }</p>
+      <p>{ count }</p>
     )
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    visualProgress: state.word
-    //eventually this must not show a word but our progress
+    visualProgress: state.guesses.filter((letter) => {
+      return !state.word.includes(letter)
+    }).length
   }
 }
 export default connect(mapStateToProps)(VisualProgress)

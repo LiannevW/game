@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import WrongGuesses from './components/WrongGuesses'
 import VisualProgress from './components/VisualProgress'
+import WordProgress from './components/WordProgress'
 
 class App extends Component {
   render() {
@@ -13,8 +14,8 @@ class App extends Component {
 
         <VisualProgress />
 
-        <div className="wordProgress"></div>
-        <p>_ _ _ E </p>
+        <WordProgress />
+
 
         <div className="letterInput"></div>
 
