@@ -7,10 +7,7 @@ class GuessInput extends PureComponent {
 
   onInputChange(event) {
     if (event.key === 'Enter') {
-    this.props.dispatch({
-      type: "GUESS",
-      payload: event.target.value
-    })
+    this.props.guess(event.target.value)
 
     return this.setState({
       value: ''
