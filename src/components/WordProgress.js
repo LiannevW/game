@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 
 class WordProgress extends PureComponent {
   render() {
-  return (
-      <p>{this.props.progress}</p>
-  )
+    return (
+        <p>{this.props.progress}</p>
+    )
   }
 }
 
@@ -17,7 +17,6 @@ const mapStateToProps = (state) => {
         if (state.guesses.includes(letter)) {
           return letter
         }
-
           return "_"
         })
         .join(" ")
