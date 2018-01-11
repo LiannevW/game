@@ -1,9 +1,3 @@
-.crossFading{
-    -webkit-animation: fadein 5s linear 1 normal forwards;
+.image {
+  height: 150px;
 }
-
-@-webkit-keyframes fadein{
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
- 
